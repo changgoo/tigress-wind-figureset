@@ -1,2 +1,18 @@
+Paper:
+* [arXiv](link)
+* [ApJ](link)
+
 Figure sets:
-* [Figure 2](figure2.html)
+* [Figure 2](https://changgoo.github.io/tigress-wind-figureset/images/figure2.html)
+* [Figure 3](https://changgoo.github.io/tigress-wind-figureset/images/figure3.html)
+* [Figure 4](https://changgoo.github.io/tigress-wind-figureset/images/figure4.html)
+* [Figure 5](https://changgoo.github.io/tigress-wind-figureset/images/figure5.html)
+* [Figure 6](https://changgoo.github.io/tigress-wind-figureset/images/figure6.html)
+* [Figure 7](https://changgoo.github.io/tigress-wind-figureset/images/figure7.html)
+* [Figure 8](https://changgoo.github.io/tigress-wind-figureset/images/figure8.html)
+* [Figure 13](https://changgoo.github.io/tigress-wind-figureset/images/figure13.html)
+
+Data download:
+* [table-mean](https://changgoo.github.io/tigress-wind-figureset/tables/table-mean.ecsv)
+* [table-std](https://changgoo.github.io/tigress-wind-figureset/tables/table-std.ecsv)
+* [Example notebook](https://nbviewer.jupyter.org/urls/changgoo.github.io/tigress-wind-figureset/tables/Example_scripts.ipynb)
