@@ -1,6 +1,7 @@
 Paper:
-* [arXiv](link)
-* [ApJ](link)
+* arXiv
+* ApJ
+* SMAUG papers
 
 Figure sets:
 * [Figure 2](https://changgoo.github.io/tigress-wind-figureset/images/figure2.html)
@@ -10,6 +11,7 @@ Figure sets:
 * [Figure 6](https://changgoo.github.io/tigress-wind-figureset/images/figure6.html)
 * [Figure 7](https://changgoo.github.io/tigress-wind-figureset/images/figure7.html)
 * [Figure 8](https://changgoo.github.io/tigress-wind-figureset/images/figure8.html)
+* [Figure 9](https://changgoo.github.io/tigress-wind-figureset/images/figure9.html)
 * [Figure 13](https://changgoo.github.io/tigress-wind-figureset/images/figure13.html)
 
 Data download:
