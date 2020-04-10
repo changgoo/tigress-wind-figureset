@@ -18,4 +18,5 @@ Figure sets:
 Data download:
 * [table-mean](https://changgoo.github.io/tigress-wind-figureset/tables/table-mean.ecsv)
 * [table-std](https://changgoo.github.io/tigress-wind-figureset/tables/table-std.ecsv)
+* [Table 5 pdf](https://changgoo.github.io/tigress-wind-figureset/tables/Table5.pdf)
 * [Example notebook](https://nbviewer.jupyter.org/urls/changgoo.github.io/tigress-wind-figureset/tables/Example_scripts.ipynb)
