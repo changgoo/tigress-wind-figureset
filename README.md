@@ -13,6 +13,7 @@ Figure sets:
 * [Figure 8](https://changgoo.github.io/tigress-wind-figureset/images/figure8.html)
 * [Figure 9](https://changgoo.github.io/tigress-wind-figureset/images/figure9.html)
 * [Figure 13](https://changgoo.github.io/tigress-wind-figureset/images/figure13.html)
+* [Figure 17](https://changgoo.github.io/tigress-wind-figureset/images/figure17.html)
 
 Data download:
 * [table-mean](https://changgoo.github.io/tigress-wind-figureset/tables/table-mean.ecsv)
