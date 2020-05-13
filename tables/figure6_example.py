@@ -3,7 +3,7 @@ import numpy as np
 # Reading Tables with astropy:
 from astropy.table import QTable,Table
 tmean=Table.read('table-mean.ecsv')
-tstd=Table.read('table-std.ecsv')
+tstd=Table.read('table-mean-err.ecsv')
 
 # Reproducing Figure 6:
 
@@ -22,15 +22,15 @@ names=['R2', 'LGR2', 'R4', 'LGR4', 'R8', 'LGR8', 'R16']
 z = 'H'
 
 # loading factors
-yfields=['mass_loading','mom_loading','energy_loading','metal_sn_loading']
-labels=[r'$\eta_M$',r'$\eta_p$',r'$\eta_E$',r'$\eta_Z^{\rm SN}$']
+yfields=['mass_loading','mom_kin_loading','energy_loading','metal_sn_loading']
+labels=[r'$\eta_M$',r'$\eta_p^{\rm k}$',r'$\eta_E$',r'$\eta_Z^{\rm SN}$']
 
 # SFR surface density
 xfield = 'sfr40'
 xlabel=r'$\Sigma_{{\rm SFR,40}}\,[M_{\odot}{\rm \, kpc^{-2}\,yr^{-1}}]$'
 
 # set figure space
-fig, axes = plt.subplots(4,2,figsize=(12,12),sharex='col',sharey='row')
+fig, axes = plt.subplots(4,2,figsize=(10,8),sharex='col',sharey='row')
 _axes=axes.flatten()
 iax=0
 
@@ -67,3 +67,4 @@ for ax,lab in zip(axes[:,0],labels):
     ax.set_ylabel(r'$\log\,$'+lab)
 plt.setp(axes[-1,:],'xlabel',r'$\log\,$'+xlabel)
 plt.tight_layout()
+plt.show()
