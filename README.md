@@ -1,12 +1,12 @@
-Paper:
+### Paper:
 * arXiv
 * ApJ
 * SMAUG papers
 
-Movies:
+### Movies:
 * [Figure 1](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/slice_all_streamlines.mp4)
 
-Figure sets:
+### Figure sets:
 * [Figure 2](https://changgoo.github.io/tigress-wind-figureset/images/figure2.html)
 * [Figure 3](https://changgoo.github.io/tigress-wind-figureset/images/figure3.html)
 * [Figure 4](https://changgoo.github.io/tigress-wind-figureset/images/figure4.html)
@@ -18,7 +18,7 @@ Figure sets:
 * [Figure 13](https://changgoo.github.io/tigress-wind-figureset/images/figure13.html)
 * [Figure 17](https://changgoo.github.io/tigress-wind-figureset/images/figure17.html)
 
-Data download:
+### Data download:
 * [table-mean](https://changgoo.github.io/tigress-wind-figureset/tables/table-mean.ecsv)
 * [table-mean-err](https://changgoo.github.io/tigress-wind-figureset/tables/table-mean-err.ecsv)
 * [table-std](https://changgoo.github.io/tigress-wind-figureset/tables/table-std.ecsv)
@@ -27,7 +27,7 @@ Data download:
 * [Table 5 pdf](https://changgoo.github.io/tigress-wind-figureset/tables/Table5.pdf)
 * [Example notebook](https://nbviewer.jupyter.org/urls/changgoo.github.io/tigress-wind-figureset/tables/Example_scripts.ipynb)
 
-Additional Movies:
+### Additional Movies:
 * [R2](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/R2_slice_proj.mp4)
 * [R4](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/R4_slice_proj.mp4)
 * [R8](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/R8_slice_proj.mp4)
@@ -36,5 +36,5 @@ Additional Movies:
 * [LGR4](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/LGR4_slice_proj.mp4)
 * [LGR8](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/LGR8_slice_proj.mp4)
 
-Additional Figures:
+### Additional Figures:
 * [Fitting Result with Corner Plot](https://changgoo.github.io/tigress-wind-figureset/fitting/index.html)
