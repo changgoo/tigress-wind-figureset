@@ -4,8 +4,15 @@ Paper:
 * SMAUG papers
 
 Movies:
-* [Figure 1](http://tigress-web.princeton.edu/~changgoo/TIGRESS_figures/movies/slice_all_streamlines.mp4)
-* [Additional Movies](https://changgoo.github.io/tigress-wind-figureset/movies/all_movies.html)
+* [Figure 1](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/slice_all_streamlines.mp4)
+* Additional Movies:
+  * [R2](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/R2_slice_proj.mp4)
+  * [R4](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/R4_slice_proj.mp4)
+  * [R8](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/R8_slice_proj.mp4)
+  * [R16](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/R16_slice_proj.mp4)
+  * [LGR2](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/LGR2_slice_proj.mp4)
+  * [LGR4](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/LGR4_slice_proj.mp4)
+  * [LGR8](http://tigress-web.princeton.edu/~changgoo/TIGRESS-movies/default/LGR8_slice_proj.mp4)
 
 Figure sets:
 * [Figure 2](https://changgoo.github.io/tigress-wind-figureset/images/figure2.html)

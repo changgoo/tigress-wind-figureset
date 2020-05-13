@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Plots for Fitting Results</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("button").click(function(){
+        var key = [];
+        $.each($(".xfield option:selected"), function(){
+            key.push($(this).val());
+        });
+        $.each($(".yfield option:selected"), function(){
+            key.push($(this).val());
+        });
+        $.each($(".phase option:selected"), function(){
+            key.push($(this).val());
+        });
+        $.each($(".z0 option:selected"), function(){
+            key.push($(this).val());
+        });
+
+        document.getElementById('img').src = "images/"+key.join("-")+".png";
+    });
+});
+</script>
+<style>
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+img {
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+    <img id = "img" src = "./images/sfr40_hst-mass_loading-cool-H.png"/>
+    <form>
+        <label>Select X field:</label>
+        <select class="xfield">
+            <option value="sfr40_hst" selected>SFR40</option>
+            <option value="surf">surf</option>
+            <option value="nmid_2p">nmid</option>
+            <option value="Pmid_2p">Pmid</option>
+            <option value="W_2p">W</option>
+            <option value="tdep40">tdep40</option>
+        </select>
+
+        <label>Select Y field:</label>
+        <select class="yfield">
+            <option value="mass_loading" selected>mass loading</option>
+            <option value="mom_kin_loading">momentum (kin) loading</option>
+            <option value="energy_loading">energy loading</option>
+            <option value="metal_sn_loading">metal (SN) loading</option>
+            <option value="vout_flux">vout</option>
+            <option value="vB">vB</option>
+            <option value="enrichment">enrichment</option>
+        </select>
+
+        <label>Select Phase:</label>
+        <select class="phase">
+            <option value="cool" selected>cool</option>
+            <option value="int">int</option>
+            <option value="hot">hot</option>
+        </select>
+
+        <label>Select Height:</label>
+        <select class="z0">
+            <option value="H" selected>H</option>
+            <option value="2H">2H</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+        </select>
+        <button type="button">Show Plot</button>
+    </form>
+</body>
+</html>
