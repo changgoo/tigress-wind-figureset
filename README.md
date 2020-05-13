@@ -3,6 +3,10 @@ Paper:
 * ApJ
 * SMAUG papers
 
+Movies:
+* [Figure 1](http://tigress-web.princeton.edu/~changgoo/TIGRESS_figures/movies/slice_all_streamlines.mp4)
+* [Additional Movies](https://changgoo.github.io/tigress-wind-figureset/movies/all_movies.html)
+
 Figure sets:
 * [Figure 2](https://changgoo.github.io/tigress-wind-figureset/images/figure2.html)
 * [Figure 3](https://changgoo.github.io/tigress-wind-figureset/images/figure3.html)
@@ -15,8 +19,16 @@ Figure sets:
 * [Figure 13](https://changgoo.github.io/tigress-wind-figureset/images/figure13.html)
 * [Figure 17](https://changgoo.github.io/tigress-wind-figureset/images/figure17.html)
 
+
+Additional Figures:
+* [Fitting Results](https://changgoo.github.io/tigress-wind-figureset/fitting/index.html)
+* [Corner Plots](https://changgoo.github.io/tigress-wind-figureset/corner/index.html)
+
 Data download:
 * [table-mean](https://changgoo.github.io/tigress-wind-figureset/tables/table-mean.ecsv)
+* [table-mean-err](https://changgoo.github.io/tigress-wind-figureset/tables/table-mean-err.ecsv)
 * [table-std](https://changgoo.github.io/tigress-wind-figureset/tables/table-std.ecsv)
+* [Table 3 pdf](https://changgoo.github.io/tigress-wind-figureset/tables/Table3.pdf)
+* [Table 4 pdf](https://changgoo.github.io/tigress-wind-figureset/tables/Table4.pdf)
 * [Table 5 pdf](https://changgoo.github.io/tigress-wind-figureset/tables/Table5.pdf)
 * [Example notebook](https://nbviewer.jupyter.org/urls/changgoo.github.io/tigress-wind-figureset/tables/Example_scripts.ipynb)
