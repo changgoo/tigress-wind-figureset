@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Fitting Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Multiphase Outflows in TIGRESS</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+                        <li><a href="movies.html" class="active">Movies</a></li>
+                        <li><a href="figureset.html" class="active">Figure Sets</a></li>
+						<li><a href="fitting.html" class="active">Fitting Results</a></li>
+<!--
+                        <li>
+                            <img src="SMAUGlogo/web/SMAUG_RED/SMAUG_logo_RGB_RED.png">
+                        </li>
+-->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+                <section id="main" class="wrapper">
+                    <div class="inner">
+                        <h1> Fitting Results </h1>
+                        <div class="split style1">
+                            <section>
+                                <span class="image fit">
+                                    <img id = "img-fit" src = "./images/fitting/sfr40_hst-mass_loading-cool-H.png"/>    
+                                </span>
+                                <span class="image fit">
+                                    <img id = "img-corner" src = "./images/fitting/sfr40_hst-mass_loading-cool-H.png"/>
+                                </span>
+                            </section>
+                            <section>
+                                <form method="post" action="#">
+                                    <div class="field">
+                                        <label>X field:</label>
+                                        <select class="xfield">
+                                            <option value="sfr40_hst" selected>SFR40</option>
+                                            <option value="surf">surf</option>
+                                            <option value="nmid_2p">nmid</option>
+                                            <option value="Pmid_2p">Pmid</option>
+                                            <option value="W_2p">W</option>
+                                            <option value="tdep40">tdep40</option>
+                                        </select>
+                                    </div>
+                                    <br/>
+                                    <div class="field">
+                                        <label>Y field:</label>
+                                        <select class="yfield">
+                                            <option value="mass_loading" selected>mass loading</option>
+                                            <option value="mom_kin_loading">momentum (kin) loading</option>
+                                            <option value="energy_loading">energy loading</option>
+                                            <option value="metal_sn_loading">metal (SN) loading</option>
+                                            <option value="vout_flux">vout</option>
+                                            <option value="vB">vB</option>
+                                            <option value="enrichment">enrichment</option>
+                                        </select>
+                                    </div>
+                                    <br/>
+                                    <div class="field">
+                                        <label>Phase:</label>
+                                        <select class="phase">
+                                            <option value="cool" selected>cool</option>
+                                            <option value="int">int</option>
+                                            <option value="hot">hot</option>
+                                        </select>
+                                    </div>
+                                    <br/>
+                                    <div class="field">
+                                        <label>Height:</label>
+                                        <select class="z0">
+                                            <option value="H" selected>H</option>
+                                            <option value="2H">2H</option>
+                                            <option value="500">500</option>
+                                            <option value="1000">1000</option>
+                                        </select>
+                                    </div>
+                                    <br/>
+                                    <button type="button">Show Plot</button>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+                        <li><a href="mailto:changgookim@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>&copy; Chang-Goo Kim. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            $(document).ready(function() {
+                $("button").click(function(){
+                    var key = [];
+                    $.each($(".xfield option:selected"), function(){
+                        key.push($(this).val());
+                    });
+                    $.each($(".yfield option:selected"), function(){
+                        key.push($(this).val());
+                    });
+                    $.each($(".phase option:selected"), function(){
+                        key.push($(this).val());
+                    });
+                    $.each($(".z0 option:selected"), function(){
+                        key.push($(this).val());
+                    });
+
+                    document.getElementById('img-fit').src = "./images/fitting/"+key.join("-")+".png";
+                    document.getElementById('img-corner').src = "./images/corner/"+key.join("-")+".png";
+                });
+            });
+            </script>
+	</body>
+</html>

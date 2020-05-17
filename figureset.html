@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Figure Sets</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Multiphase Outflows in TIGRESS</a>
+				<nav>
+					<ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="movies.html" class="active">Movies</a></li>
+                        <li><a href="figureset.html" class="active">Figure Sets</a></li>
+						<li><a href="fitting.html" class="active">Fitting Results</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+                <section id="main" class="wrapper">
+                    <div class="inner">
+                        
+                        <h1> Figure Sets </h1>
+                        <div class="split style1">
+                            <section>
+                                <span class="image fit">
+                                    <img id = "img" src = "./images/figuresets/allflux-R2.png"/>
+                                </span>
+                            </section>
+                            <section>
+                                <form method="post">
+                                    <div class="field">
+                                        <label>Figure Number:</label>
+                                        <select class="category" id="category" onchange="javascript: dynamicdropdown(this.selectedIndex);">
+<!--                                            <option value="">select figure number...</option>-->
+                                            <option value="allflux" selected>Figure 3 (flux evolution)</option>
+                                            <option value="metal">Figure 4 (metal evolution)</option>
+                                            <option value="loading">Figure 5 (loading profile)</option>
+                                            <option value="vout">Figure 6 (v/Z profile)</option>
+                                            <option value="scaling_sfr_loading">Figure 7 (loading vs SFR)</option>
+                                            <option value="scaling_all_mloading_cool">Figure 8 (cool mass loading)</option>
+                                            <option value="scaling_all_Eloading_hot">Figure 9 (hot energy loading)</option>
+                                            <option value="scaling_sfr_v">Figure 10 (v/Z vs SFR)</option>
+                                            <option value="ZvsE">Figure 14 (E loading vs Z loading)</option>
+                                            <option value="scaling_xpar">Figure 18 (loading vs inputs)</option>
+                                        </select>
+                                    </div>
+                                    <br/>
+                                    
+                                    <div class="field">
+                                        <label>Model/Height:</label>
+                                        <select class="subcategory" id="subcategory">
+                                            <option value="R2" selected>R2</option>
+                                            <option value="R4">R4</option>
+                                            <option value="R8">R8</option>
+                                            <option value="R16">R16</option>
+                                            <option value="LGR2">LGR2</option>
+                                            <option value="LGR4">LGR4</option>
+                                            <option value="LGR8">LGR8</option>
+                                        </select>
+                                    </div>
+                                    <br/>
+                                    <ul class="actions">
+                                        <li>     
+                                            <button type="button" class="buttonplot">Show Plot</button>
+                                        </li>
+                                    </ul>
+                                </form>    
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+                        <li><a href="mailto:changgookim@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>&copy; Chang-Goo Kim. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            $(document).ready(function() {
+                $("button").click(function(){
+                    var key = [];
+                    $.each($(".category option:selected"), function(){
+                        key.push($(this).val());
+                    });
+                    $.each($(".subcategory option:selected"), function(){
+                        key.push($(this).val());
+                    });
+                    document.getElementById('img').src = "./images/figuresets/"+key.join("-")+".png";
+                });
+            });
+            </script>
+            <script language="javascript" type="text/javascript">
+                function dynamicdropdown(listindex)
+                {
+                    const figtype1 = ['allflux','metal','loading','vout'];
+
+                    document.getElementById("subcategory").length = 0;
+
+//                    if (listindex == 0) {
+//                        document.getElementById("subcategory").options[0]=new Option("select figure first","");
+//                    } else 
+                    if (listindex < 4) {
+//                        document.getElementById("subcategory").options[0]=new Option("select model","");
+                        document.getElementById("subcategory").options[0]=new Option("R2","R2");
+                        document.getElementById("subcategory").options[1]=new Option("R4","R4");
+                        document.getElementById("subcategory").options[2]=new Option("R8","R8");
+                        document.getElementById("subcategory").options[3]=new Option("R16","R16");
+                        document.getElementById("subcategory").options[4]=new Option("LGR2","LGR2");
+                        document.getElementById("subcategory").options[5]=new Option("LGR4","LGR4");
+                        document.getElementById("subcategory").options[6]=new Option("LGR8","LGR8");
+                    } else {
+//                        document.getElementById("subcategory").options[0]=new Option("select height","");
+                        document.getElementById("subcategory").options[0]=new Option("H","H");
+                        document.getElementById("subcategory").options[1]=new Option("2H","2H");
+                        document.getElementById("subcategory").options[2]=new Option("500","500");
+                        document.getElementById("subcategory").options[3]=new Option("1000","1000");
+                    }
+                    return true;
+                }
+            </script>
+	</body>
+</html>
