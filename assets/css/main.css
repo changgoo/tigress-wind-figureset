@@ -220,6 +220,31 @@ input, select, textarea {
 		font-size: 1.75em;
 	}
 
+    h2.major {
+			margin: 0 0 1.3em 0;
+			position: relative;
+			padding-bottom: 0.25em;
+		}
+
+			h2.major:after {
+				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				-moz-transition: max-width 0.2s ease;
+				-webkit-transition: max-width 0.2s ease;
+				-ms-transition: max-width 0.2s ease;
+				transition: max-width 0.2s ease;
+				border-radius: 0.2em;
+				bottom: 0;
+				content: '';
+				height: 0.05em;
+				position: absolute;
+				right: 0;
+				width: 100%;
+			}
+
+
 	h3 {
 		font-size: 1.1em;
 	}
@@ -2528,12 +2553,16 @@ input, select, textarea {
 			background: #ffffff;
 			border-radius: 100%;
 			color: #312450;
-			text-align: center;
+			text-align:  center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
 		}
 
-			.icon.major:before {
+            .icon.major img{
+                vertical-align: middle;
+            }
+
+            .icon.major:before {
 				font-size: 1.25em;
 			}
 
