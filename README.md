@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/254469139.svg)](https://zenodo.org/badge/latestdoi/254469139)
+
 # Figuresets and Data for TIGRESS wind paper
 
 * [web page](https://changgoo.github.io/tigress-wind-figureset/)
