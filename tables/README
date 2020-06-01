@@ -1,3 +1,0 @@
-Data tables are saved with `ascii.ecsv` format using `astropy.table.QTable`
-
-`table-mean.ecsv` and `table-std.ecsv` respectively contain the mean and standard deviation values over 0.5<t/torb<1.5 for all quantities presented in Tables 3,4,5 from all models, phases, and heights. `table-mean-err.ecsv` contains the error of the mean using bootstrap resmapling. With the data, Figures 7-13 can be reproduced.
